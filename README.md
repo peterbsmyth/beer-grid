@@ -47,6 +47,10 @@ ___
 - [Shape Up – Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup)
 - [The Spirit... of Sprints](https://medium.com/@johnpcutler/the-spirit-of-sprints-75a38354bd7b)
 - EPD
+- scrum
+  - product owner
+  - scrum master
+  - dev team members
 
 ___
 
@@ -65,13 +69,7 @@ ___
 - content projection
 - collapsibles / expandables
 - [scalable user interfaces with angular 2 by gion kunz](https://www.youtube.com/watch?v=A4-bxyjXc40)
-
 - user interviews
-- scrum
-  - product owner
-  - scrum master
-  - dev team members
-
 ___
 
 ## Thoughts on Design & Development
