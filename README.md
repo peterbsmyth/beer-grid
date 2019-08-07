@@ -32,4 +32,31 @@ A collaborative Design and Development Process For Teams Who Can't Product Good 
 - content projection
 - collapsibles / expandables
 - [scalable user interfaces with angular 2 by gion kunz](https://www.youtube.com/watch?v=A4-bxyjXc40)
-- 
+
+- user interviews
+- scrum
+  - product owner
+  - scrum master
+  - dev team members
+
+- there's a concept that the work of design and development are clearly divided in the sense that a designer does designer and a developer does development. this is about breaking that divide.
+
+- the way forward is to get developers interacting with design tokens that live in the browser
+- the way forward is to get designers working with components, css, and browser tools like chrome devtools
+
+- there are a lot of tools that are considered designer-y and tools that are considered developer-y
+   - on the web the tools are the same, both dev and designer use the same things in this concept
+
+- benefit: dev bootcamp grads can do either design or dev, technically
+- benefit: lower friction between design and development of end-product
+
+
+
+
+
+
+
+
+
+
+
