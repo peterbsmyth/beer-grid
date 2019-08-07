@@ -52,6 +52,16 @@ ___
   - scrum master
   - dev team members
 
+#### Outline
+1. Gather User Requirements with User Interviews
+2. Create a Product Backlog of User Stories
+3. Prototype
+  1. Data Models
+  2. User Interface
+  3. API
+4. Iterate on Prototypes
+5. Connect API and User Interface through Front-end State Management
+6. Deploy to staging servers
 ___
 
 ### The State of Frontend Design
