@@ -106,13 +106,12 @@ This is about breaking that divide.
 - Benefit: Dev bootcamp grads can do either design or dev, technically
 - Benefit: Lower friction between design and development of end-product
 
+#### Titles
+- Design Technologist
+- UX Engineer
+- Design Engineer
+- Dev-signer
+- Front-end Designer
 
 
-
-
-
-
-
-
-
-
+- [styleti.les](http://styletil.es/) to describe the high-fidelity
