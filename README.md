@@ -9,7 +9,7 @@ A collaborative Design and Development Process For Teams Who Can't Product Good 
 - [Intro to the 8pt Grid System – Pivotal Labs](https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632)
 - [The 8pt Grid](https://spec.fm/specifics/8-pt-grid)
 - [The Vignelli Canon – Massimo Vignelli](https://openlab.citytech.cuny.edu/desantistypographicdesign2427fall1d210/files/2017/11/Vignelli_canon.pdf)
-
+- [Ether](https://ether.thescenery.co/)
 ___
 
 ### UX
@@ -34,6 +34,7 @@ ___
 - component audits
   - UX patterns can drift over time
   - go through every interface and insure consistency and appropriateness
+- [Design Technologists at Indeed](https://medium.com/indeed-design/what-is-a-design-technologist-6431531f0d48)
 
 #### Design Tokens
 - [Tokens in Design Systems – Nathan Curtis](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421)
@@ -59,7 +60,7 @@ ___
   1. Data Models
   2. User Interface
   3. API
-4. Iterate on Prototypes
+4. Iterate on Prototypes (worth expansion)
 5. Connect API and User Interface through Front-end State Management
 6. Deploy to staging servers
 ___
@@ -86,7 +87,13 @@ ___
 
 There's a concept that the work of design and development are clearly divided in the sense that a designer does designer and a developer does development.
 
-This is about breaking that divide.
+This is about breaking that divide.  
+
+"Web Design is designing in the language of the web."
+"Web Design is design in the web."
+
+"Developers are included in Design"
+"design is a team sport"
 
 ### The Way Forward
 - The way forward is to get developers interacting with design tokens that live in the browser
@@ -99,13 +106,12 @@ This is about breaking that divide.
 - Benefit: Dev bootcamp grads can do either design or dev, technically
 - Benefit: Lower friction between design and development of end-product
 
+#### Titles
+- Design Technologist
+- UX Engineer
+- Design Engineer
+- Dev-signer
+- Front-end Designer
 
 
-
-
-
-
-
-
-
-
+- [styleti.les](http://styletil.es/) to describe the high-fidelity
