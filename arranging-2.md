@@ -1,5 +1,6 @@
 ## Our Goals  
 Translate a Design Technologist to angular
+
 ## Goal for Audience
 - [ ] change mood
 - [ ] change mind
@@ -76,6 +77,17 @@ Translate a Design Technologist to angular
   - you can go low-fidelity wide
   - high-fidelity narrow
 
+
+#### How A Design Technologist Works
+- Empty Project
+- SASS architecture from the beginning
+- BEM
+- A first input: <input>...
+- A first display: <card>
+- A first layout: <side-nav> and <top-nav>
+- A first interaction: <input> modifies display
+- Using a static data model
+- 
 ### Arrangement
 #### Introduction
 #### Narration
