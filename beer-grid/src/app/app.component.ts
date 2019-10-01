@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import venueStaticData from "../assets/data/beer-list-rye-house.json";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'beer-grid';
+  venue = venueStaticData;
+  // beers = beerStaticData;
 }
+
