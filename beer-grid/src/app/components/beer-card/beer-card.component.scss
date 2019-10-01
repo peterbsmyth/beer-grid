@@ -1,0 +1,77 @@
+@import "utils";
+
+.beer {
+  background: $white;
+  color: $grey-900;
+  padding: $space-m;
+  margin-bottom: $space-m;
+  border-radius: $radius-l;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: $box-shadow-01;
+
+  &__label {
+    margin-right: $space-m;
+  }
+
+
+  &__name {
+    font-weight: bold;
+    font-size: type-scale(6);
+    line-height: baseline-scale(4);
+  }
+
+  &__style {
+    font-weight: bold;
+    font-size: type-scale(2);
+    line-height: baseline-scale(2);
+    margin-bottom: $space-s;
+    color: $teal-500;
+  }
+
+  &__meta {
+    font-weight: bold;
+    font-size: px--rem(10px);
+    line-height: baseline-scale(2);
+    margin-bottom: $space-s;
+    color: $grey-700;
+    text-transform: uppercase;
+  }
+  
+  &__meta-label {
+    color: $grey-400;
+  }
+
+  &__abv,
+  &__ibu {
+    display: inline-block;
+    margin-right: $space-s;
+    border: px--rem(1px) solid $grey-200;
+    padding: $space-xs $space-s;
+    border-radius: $radius-m;
+  }
+
+}
+
+.brewery {
+  &__name {
+    font-size: type-scale(2);
+    line-height: baseline-scale(2);
+    font-weight: normal;
+    color: $grey-600;
+  }
+  &__meta {
+    font-weight: bold;
+    font-size: px--rem(10px);
+    line-height: baseline-scale(2);
+    margin-bottom: $space-s;
+    color: $grey-400;
+    text-transform: uppercase;
+  }
+
+  &__city,
+  &__country {
+    display: inline-block;
+    margin-right: $space-xs;
+  }
+}

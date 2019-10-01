@@ -1,0 +1,22 @@
+@import "utils";
+
+.header {
+  padding: $space-m;
+  background: $white;
+
+  &__title {
+    font-weight: 300;
+    font-size: type-scale(7);
+    line-height: baseline-scale(5);
+  }
+}
+
+.beers {
+  padding: $space-m;
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: $space-m;
+    grid-row-gap: $space-m;
+  }
+}

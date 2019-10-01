@@ -1,10 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<header>
-  <h1>
-    Welcome to {{ title }}!
+<header class="header">
+  <h1 class="header__title">
+    On Draft at {{ venue.name }}
   </h1>
 </header>
 
 <main>
+  <section class="beers">
+    <app-beer-card
+      *ngFor="let beer of venue.beers"
+      [beer]="beer">
+    </app-beer-card>
+  </section>
   <router-outlet></router-outlet>
 </main>

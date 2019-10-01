@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+/*! beergrid.scss v0.1.0 */
+
+/* Destyle.css, an opinionated reset
+   ========================================================================== */
+@import './assets/scss/_destyle';
+
+
+/* Utilities: Design Tokens, Functions and Mixins
+   (Larger projects typically have these files separated)
+   ========================================================================== */
+@import './assets/scss/_utils';
+
+
+/* Base Styles
+   Settings for basic design globals
+   ========================================================================== */
+html {
+  background-color: $grey-050;
+  color: $grey-900;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: $family-sans-serif;
+  font-size: 1rem;
+  height: 100%;
+}

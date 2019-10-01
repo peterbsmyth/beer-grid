@@ -1,0 +1,18 @@
+<div class="beer">
+  <img class="beer__label" [src]="beer.label"/>
+  <div class="beer__content">
+    <p class="beer__name">{{ beer.name }}</p>
+    <p class="beer__style">{{ beer.style }}</p>
+    <p class="brewery__name">{{ beer.brewery.name }}</p>
+
+    <div class="brewery__meta">
+      <p class="brewery__city">{{ beer.brewery.city }}, {{ beer.brewery.state }}</p>
+      <p class="brewery__country"> • {{ beer.brewery.country }}</p>
+    </div>
+
+    <div class="beer__meta">
+      <p class="beer__abv">{{ beer.abv }} <span class="beer__meta-label">abv</span></p>
+      <p class="beer__ibu">{{ beer.ibu }} <span class="beer__meta-label">ibu</span></p>
+    </div>
+  </div>
+</div>
