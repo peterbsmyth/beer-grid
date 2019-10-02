@@ -1,0 +1,46 @@
+{
+  "beers": [
+    {
+      "name": "Citra Snuggy",
+      "style": "IPA - Imperial / Double",
+      "label": "https://image-placeholder.com/images/actual-size/75x75.png",
+      "desc": "Wrap yourself in the pillowy mouthfeel of flaked oats and tropical goodness in Citra Snuggy. This medium-bodied Double IPA will bring all the best of…",
+      "abv": 8.3,
+      "ibu": 38,
+      "brewery": {
+        "name": "DuClaw Brewing Company",
+        "city": "Baltimore",
+        "state": "MD",
+        "country": "United States"
+      }
+    },
+    {
+      "name": "Humming Dragon",
+      "style": "IPA - American",
+      "label": "https://image-placeholder.com/images/actual-size/75x75.png",
+      "desc": "DDH with Citra, Simcoe, and El Dorado. Brewed with Pilsner Malt and flaked oats.",
+      "abv": 7,
+      "ibu": 58,
+      "brewery": {
+        "name": "LIC Beer Project",
+        "city": "Long Island City",
+        "state": "NY",
+        "country": "United States"
+      }
+    },
+    {
+      "name": "Oktoberfest",
+      "style": "Märzen",
+      "label": "https://image-placeholder.com/images/actual-size/75x75.png",
+      "desc": "A true full-bodied Oktoberfest lager. Dark in color with a fine caramel finish.",
+      "abv": 5.6,
+      "ibu": 35,
+      "brewery": {
+        "name": "von Trapp Brewing",
+        "city": "Stowe",
+        "state": "VT",
+        "country": "United States"
+      }
+    }
+  ]
+}
