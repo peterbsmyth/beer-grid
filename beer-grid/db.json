@@ -2,47 +2,626 @@
   "beers": [
     {
       "id": 1,
-      "name": "Citra Snuggy",
+      "name": "Triple Space Diamonds",
       "style": "IPA - Imperial / Double",
-      "label": "https://image-placeholder.com/images/actual-size/75x75.png",
-      "desc": "Wrap yourself in the pillowy mouthfeel of flaked oats and tropical goodness in Citra Snuggy. This medium-bodied Double IPA will bring all the best of…",
-      "abv": 8.3,
-      "ibu": 38,
+      "label": "",
+      "desc": "",
+      "abv": 10.5,
+      "ibu": 40,
       "brewery": {
-        "name": "DuClaw Brewing Company",
-        "city": "Baltimore",
-        "state": "MD",
-        "country": "United States"
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
       }
     },
     {
       "id": 2,
-      "name": "Humming Dragon",
-      "style": "IPA - American",
-      "label": "https://image-placeholder.com/images/actual-size/75x75.png",
-      "desc": "DDH with Citra, Simcoe, and El Dorado. Brewed with Pilsner Malt and flaked oats.",
-      "abv": 7,
-      "ibu": 58,
+      "name": "Double Dry Hopped Forever Simcoe",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.5,
+      "ibu": 40,
       "brewery": {
-        "name": "LIC Beer Project",
-        "city": "Long Island City",
+        "name": "Other Half",
+        "city": "Brooklyn",
         "state": "NY",
-        "country": "United States"
+        "country": "United States",
+        "collab": ""
       }
     },
     {
       "id": 3,
-      "name": "Oktoberfest",
-      "style": "Märzen",
-      "label": "https://image-placeholder.com/images/actual-size/75x75.png",
-      "desc": "A true full-bodied Oktoberfest lager. Dark in color with a fine caramel finish.",
-      "abv": 5.6,
-      "ibu": 35,
+      "name": "Gravity gumbo",
+      "style": "Stout - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 14.5,
+      "ibu": 40,
       "brewery": {
-        "name": "von Trapp Brewing",
-        "city": "Stowe",
-        "state": "VT",
-        "country": "United States"
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 4,
+      "name": "Double Dry Hopped Double Mosaic Daydream",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 5,
+      "name": "Deep Orbit Antares",
+      "style": "Stout - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 15.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 6,
+      "name": "Triple Mylar Daydream",
+      "style": "IPA - Triple",
+      "label": "",
+      "desc": "",
+      "abv": 11.3,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 7,
+      "name": "All Jream Everything",
+      "style": "Sour - Other",
+      "label": "",
+      "desc": "",
+      "abv": 8.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 8,
+      "name": "HDHC Dream in Green",
+      "style": "IPA - New England",
+      "label": "",
+      "desc": "",
+      "abv": 6.2,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 9,
+      "name": "It's Always Green In Sonoma",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.6,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 10,
+      "name": "Triple Citra Daydream",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 10.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 11,
+      "name": "Tumbleweeds",
+      "style": "Lager - Helles",
+      "label": "",
+      "desc": "",
+      "abv": 4.8,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 12,
+      "name": "Misfroots",
+      "style": "Sour - Other",
+      "label": "",
+      "desc": "",
+      "abv": 6.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 13,
+      "name": "Utica Greens",
+      "style": "IPA - Imperial / Double New England",
+      "label": "",
+      "desc": "",
+      "abv": 9.1,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 14,
+      "name": "Double Dry Hopped OH...",
+      "style": "IPA - American",
+      "label": "",
+      "desc": "",
+      "abv": 6.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 15,
+      "name": "Green city",
+      "style": "IPA - American",
+      "label": "",
+      "desc": "",
+      "abv": 7.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 16,
+      "name": "DDH All Green Everything",
+      "style": "IPA - Triple",
+      "label": "",
+      "desc": "",
+      "abv": 10.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 17,
+      "name": "Bloomfield zoo",
+      "style": "IPA - Imperial / Double New England",
+      "label": "",
+      "desc": "",
+      "abv": 10.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 18,
+      "name": "Double Dry Hopped All Citra Everything",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 19,
+      "name": "Fever Dreams",
+      "style": "IPA - Sour",
+      "label": "",
+      "desc": "",
+      "abv": 6.7,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 20,
+      "name": "Viridian Dream",
+      "style": "IPA - New England",
+      "label": "",
+      "desc": "",
+      "abv": 6.8,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 21,
+      "name": "Triple Space Diamonds",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 10.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 22,
+      "name": "Double Dry Hopped Forever Simcoe",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 23,
+      "name": "Double Dry Hopped Double Mosaic Daydream",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 24,
+      "name": "Viridian Dream",
+      "style": "IPA - New England",
+      "label": "",
+      "desc": "",
+      "abv": 6.8,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 25,
+      "name": "All Jream Everything",
+      "style": "Sour - Other",
+      "label": "",
+      "desc": "",
+      "abv": 8.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 26,
+      "name": "All Green Everything",
+      "style": "IPA - Triple",
+      "label": "",
+      "desc": "",
+      "abv": 10.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 27,
+      "name": "Triple Citra Daydream",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 10.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 28,
+      "name": "Utica greens",
+      "style": "IPA - Imperial / Double New England",
+      "label": "",
+      "desc": "",
+      "abv": 9.1,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 29,
+      "name": "Double Dry Hopped All Citra Everything",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 30,
+      "name": "Tumbleweeds",
+      "style": "Lager - Helles",
+      "label": "",
+      "desc": "",
+      "abv": 4.8,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 31,
+      "name": "Triple Mylar Daydream",
+      "style": "IPA - Triple",
+      "label": "",
+      "desc": "",
+      "abv": 11.3,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 32,
+      "name": "DDH Small Galaxy Everything",
+      "style": "IPA - American",
+      "label": "",
+      "desc": "",
+      "abv": 6.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 33,
+      "name": "Misfroots",
+      "style": "Sour - Other",
+      "label": "",
+      "desc": "",
+      "abv": 6.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 34,
+      "name": "Hdhc Dream in Green",
+      "style": "IPA - New England",
+      "label": "",
+      "desc": "",
+      "abv": 6.2,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 35,
+      "name": "Green city",
+      "style": "IPA - American",
+      "label": "",
+      "desc": "",
+      "abv": 7.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 36,
+      "name": "Double Dry Hopped Oh...",
+      "style": "IPA - American",
+      "label": "",
+      "desc": "",
+      "abv": 6.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 37,
+      "name": "It's Always Green In Sonoma",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.6,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 38,
+      "name": "DDH Did I Make Myself Clear?",
+      "style": "IPA - American",
+      "label": "",
+      "desc": "",
+      "abv": 7.3,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 39,
+      "name": "Double Dry Hopped Forever Simcoe",
+      "style": "IPA - Imperial / Double",
+      "label": "",
+      "desc": "",
+      "abv": 8.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
       }
     }
   ]
