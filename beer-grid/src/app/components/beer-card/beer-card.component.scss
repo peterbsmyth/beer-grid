@@ -2,10 +2,10 @@
 
 .beer {
   background: $white;
+  height: 100%;
   color: $grey-900;
   padding: $space-m;
-  margin-bottom: $space-m;
-  border-radius: $radius-l;
+  border-radius: $radius-s;
   display: flex;
   align-items: flex-start;
   box-shadow: $box-shadow-01;
@@ -18,7 +18,8 @@
   &__name {
     font-weight: bold;
     font-size: type-scale(6);
-    line-height: baseline-scale(4);
+    line-height: baseline-scale(3);
+    margin-bottom: $space-s;
   }
 
   &__style {
