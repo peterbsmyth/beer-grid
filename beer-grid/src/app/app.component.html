@@ -1,14 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <header class="header">
   <h1 class="header__title">
-    On Draft at {{ venue.name }}
+    On Draft at {{ venue }}
   </h1>
 </header>
 
 <main>
   <section class="beers">
     <app-beer-card
-      *ngFor="let beer of venue.beers"
+      *ngFor="let beer of beers"
       [beer]="beer">
     </app-beer-card>
   </section>

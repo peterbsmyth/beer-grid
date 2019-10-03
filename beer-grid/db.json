@@ -1,6 +1,7 @@
 {
   "beers": [
     {
+      "id": 1,
       "name": "Citra Snuggy",
       "style": "IPA - Imperial / Double",
       "label": "https://image-placeholder.com/images/actual-size/75x75.png",
@@ -15,6 +16,7 @@
       }
     },
     {
+      "id": 2,
       "name": "Humming Dragon",
       "style": "IPA - American",
       "label": "https://image-placeholder.com/images/actual-size/75x75.png",
@@ -29,6 +31,7 @@
       }
     },
     {
+      "id": 3,
       "name": "Oktoberfest",
       "style": "Märzen",
       "label": "https://image-placeholder.com/images/actual-size/75x75.png",
