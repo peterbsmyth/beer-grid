@@ -5,13 +5,10 @@
   height: 100%;
   color: $grey-900;
   padding: $space-m;
-  border-radius: $radius-s;
-  display: flex;
-  align-items: flex-start;
-  box-shadow: $box-shadow-01;
+  border-radius: $radius-m;
 
   &__label {
-    margin-right: $space-m;
+    width: 100%;
   }
 
 
