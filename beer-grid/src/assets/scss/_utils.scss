@@ -5,20 +5,29 @@
 
 // Neutrals
 $white: #ffffff;
-$grey-050: #F0F4F8;
-$grey-100: #D9E2EC;
-$grey-200: #BCCCDC;
-$grey-300: #9FB3C8;
-$grey-400: #829AB1;
-$grey-500: #627D98;
-$grey-600: #486581;
-$grey-700: #334E68;
-$grey-800: #243B53;
-$grey-900: #102A43;
+$grey-050: hsl(0, 0%, 97%);
+$grey-100: hsl(0, 0%, 88%);
+$grey-200: hsl(0, 0%, 81%);
+$grey-300: hsl(0, 0%, 69%);
+$grey-400: hsl(0, 0%, 62%);
+$grey-500: hsl(0, 0%, 50%);
+$grey-600: hsl(0, 0%, 38%);
+$grey-700: hsl(0, 0%, 32%);
+$grey-800: hsl(0, 0%, 23%);
+$grey-900: hsl(0, 0%, 13%);
 $black: #000000;
 
 // Primary
-$teal-500: #27AB83;
+$teal-050: #F0FCF9;
+$teal-100: #C6F7E9;
+$teal-200: #8EEDD1;
+$teal-300: #5FE3C0;
+$teal-400: #2DCCA7;
+$teal-500: #17B897;
+$teal-600: #079A82;
+$teal-700: #048271;
+$teal-800: #016457;
+$teal-900: #004440;
 
 // Space
 // Proportionally scaled from the 8pt grid
@@ -49,6 +58,19 @@ $speed: 250ms;
 // Responsivity
 $desktop: 1152px;
 
+
+/* Mixins (For design pattern reusability)
+   ========================================================================== */
+
+// Desktop Media Query
+/// Creates a Media Query for anything larger than tablet sizes
+/// We use a desktop size token (SCSS variable) to set the viewport width for desktop layouts
+/// No need for a mobile version, as we're designing mobile first! :)
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
 
 
 /* Fuctions (for automating styles, and assisting with units)
@@ -102,25 +124,4 @@ $type-scale: ();
 /// @return {Number} In rem
 @function type-scale($step) {
   @return nth($type-scale, $step);
-}
-
-
-
-/* Mixins (For design pattern reusability)
-   ========================================================================== */
-
-// Desktop Media Query
-/// Creates a Media Query for anything larger than tablet sizes
-/// We use a desktop size token (SCSS variable) to set the viewport width for desktop layouts
-/// No need for a mobile version, as we're designing mobile first! :)
-@mixin desktop {
-  @media screen and (min-width: $desktop) {
-    @content;
-  }
-}
-
-@mixin dark-mode {
-  @media (prefers-color-scheme: dark) {
-    @content;
-  }
 }

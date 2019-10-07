@@ -11,7 +11,7 @@ import { Beer } from './beer.model.js';
 })
 export class AppComponent implements OnInit {
   title = 'beer-grid';
-  venue = 'Rye House';
+  venue = 'Other Half Brewing';
   beers$: Observable<Beer[]>;
   beers: Beer[];
 

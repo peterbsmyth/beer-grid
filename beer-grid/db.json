@@ -1,22 +1,6 @@
 {
   "beers": [
     {
-      "id": 1,
-      "name": "Triple Space Diamonds",
-      "style": "IPA - Imperial / Double",
-      "label": "assets/images/Triple-Space-Diamonds-render.webp",
-      "desc": "",
-      "abv": 10.5,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
       "id": 2,
       "name": "Double Orange Chroma",
       "style": "IPA - Imperial",
@@ -33,22 +17,6 @@
       }
     },
     {
-      "id": 3,
-      "name": "Gravity Gumbo",
-      "style": "Stout - Imperial / Double",
-      "label": "assets/images/Gravity-Gumbo-w-Parish.webp",
-      "desc": "",
-      "abv": 14.5,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
       "id": 4,
       "name": "Emerald Cities",
       "style": "IPA - Imperial",
@@ -59,6 +27,102 @@
       "brewery": {
         "name": "Other Half",
         "city": "Rochester",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 7,
+      "name": "All Jream Everything",
+      "style": "Sour - Other",
+      "label": "assets/images/All-Jream-Everything-w_-Burley-Oak.webp",
+      "desc": "",
+      "abv": 8.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 9,
+      "name": "It's Always Green In Sonoma",
+      "style": "IPA - Imperial / Double",
+      "label": "assets/images/Its-Always-Green-in-Sonoma-w_-Track.webp",
+      "desc": "",
+      "abv": 8.6,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 13,
+      "name": "DDH Did I Make Myself Clear?",
+      "style": "IPA - American",
+      "label": "assets/images/DDH-Did-I-Make-Myself-Clear-1.webp",
+      "desc": "",
+      "abv": 7.3,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 8,
+      "name": "Silhouette Daydream Double Brunch Crunchee Peach Granola",
+      "style": "IPA - Sour",
+      "label": "assets/images/Silhouette-Daydream-w-Hudson-Valley-1.webp",
+      "desc": "",
+      "abv": 8.0,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": "Hudson Valley"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Utica Greens",
+      "style": "IPA - Imperial / Double New England",
+      "label": "assets/images/Utica-Greens.webp",
+      "desc": "",
+      "abv": 9.1,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Gravity Gumbo",
+      "style": "Stout - Imperial / Double",
+      "label": "assets/images/Gravity-Gumbo-w-Parish.webp",
+      "desc": "",
+      "abv": 14.5,
+      "ibu": 40,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
         "state": "NY",
         "country": "United States",
         "collab": ""
@@ -97,76 +161,12 @@
       }
     },
     {
-      "id": 7,
-      "name": "All Jream Everything",
-      "style": "Sour - Other",
-      "label": "assets/images/All-Jream-Everything-w_-Burley-Oak.webp",
-      "desc": "",
-      "abv": 8.0,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
-      "id": 8,
-      "name": "Silhouette Daydream Double Brunch Crunchee Peach Granola",
-      "style": "IPA - Sour",
-      "label": "assets/images/Silhouette-Daydream-w-Hudson-Valley-1.webp",
-      "desc": "",
-      "abv": 8.0,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": "Hudson Valley"
-      }
-    },
-    {
-      "id": 9,
-      "name": "It's Always Green In Sonoma",
-      "style": "IPA - Imperial / Double",
-      "label": "assets/images/Its-Always-Green-in-Sonoma-w_-Track.webp",
-      "desc": "",
-      "abv": 8.6,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
       "id": 10,
       "name": "Tumbleweeds",
       "style": "Lager - Helles",
       "label": "assets/images/Tumbleweeds-render.webp",
       "desc": "",
       "abv": 4.8,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
-      "id": 11,
-      "name": "Utica Greens",
-      "style": "IPA - Imperial / Double New England",
-      "label": "assets/images/Utica-Greens.webp",
-      "desc": "",
-      "abv": 9.1,
       "ibu": 40,
       "brewery": {
         "name": "Other Half",
@@ -193,12 +193,12 @@
       }
     },
     {
-      "id": 13,
-      "name": "DDH Did I Make Myself Clear?",
-      "style": "IPA - American",
-      "label": "assets/images/DDH-Did-I-Make-Myself-Clear-1.webp",
+      "id": 1,
+      "name": "Triple Space Diamonds",
+      "style": "IPA - Imperial / Double",
+      "label": "assets/images/Triple-Space-Diamonds-render.webp",
       "desc": "",
-      "abv": 7.3,
+      "abv": 10.5,
       "ibu": 40,
       "brewery": {
         "name": "Other Half",
