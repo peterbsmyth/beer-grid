@@ -2,15 +2,27 @@
 
 /* Destyle.css, an opinionated reset
    ========================================================================== */
-// @import './assets/scss/_destyle';
+@import './assets/scss/_destyle';
 
 
 /* Utilities: Design Tokens, Functions and Mixins
    (Larger projects typically have these files separated)
    ========================================================================== */
-// @import './assets/scss/_utils';
+@import './assets/scss/_utils';
 
 
 /* Base Styles
    Settings for basic design globals
    ========================================================================== */
+html {
+  background-color: $grey-900;
+  color: $grey-050;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: $family-sans-serif;
+  font-size: 1rem;
+  height: 100%;
+}
