@@ -9,13 +9,11 @@ import { entityMetadata } from './entity-metadata';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { HttpClientModule } from '@angular/common/http';
-import { BeerCardDoneComponent } from './components/beer-card-done/beer-card-done.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeerCardComponent,
-    BeerCardDoneComponent
+    BeerCardComponent
   ],
   imports: [
     BrowserModule,
