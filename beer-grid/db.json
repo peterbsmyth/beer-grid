@@ -7,7 +7,7 @@
       "label": "assets/images/Double-Orange-Chroma.jpg",
       "desc": "",
       "abv": 8.2,
-      "ibu": 40,
+      "ibu": 70,
       "brewery": {
         "name": "Other Half",
         "city": "Rochester",
@@ -23,7 +23,7 @@
       "label": "assets/images/Emerald-Cities.jpg",
       "desc": "",
       "abv": 7.9,
-      "ibu": 40,
+      "ibu": 75,
       "brewery": {
         "name": "Other Half",
         "city": "Rochester",
@@ -39,7 +39,7 @@
       "label": "assets/images/All-Jream-Everything-w_-Burley-Oak.jpg",
       "desc": "",
       "abv": 8.0,
-      "ibu": 40,
+      "ibu": 35,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -55,7 +55,7 @@
       "label": "assets/images/Its-Always-Green-in-Sonoma-w_-Track.jpg",
       "desc": "",
       "abv": 8.6,
-      "ibu": 40,
+      "ibu": 80,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -71,7 +71,7 @@
       "label": "assets/images/DDH-Did-I-Make-Myself-Clear-1.jpg",
       "desc": "",
       "abv": 7.3,
-      "ibu": 40,
+      "ibu": 77,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -87,7 +87,7 @@
       "label": "assets/images/Silhouette-Daydream-w-Hudson-Valley-1.jpg",
       "desc": "",
       "abv": 8.0,
-      "ibu": 40,
+      "ibu": 20,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -103,7 +103,7 @@
       "label": "assets/images/Utica-Greens.jpg",
       "desc": "",
       "abv": 9.1,
-      "ibu": 40,
+      "ibu": 68,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -119,7 +119,7 @@
       "label": "assets/images/Gravity-Gumbo-w-Parish.jpg",
       "desc": "",
       "abv": 14.5,
-      "ibu": 40,
+      "ibu": 15,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -135,7 +135,7 @@
       "label": "assets/images/Deep-Orbit-Antares-Nutter-Butter.jpg",
       "desc": "",
       "abv": 15.5,
-      "ibu": 40,
+      "ibu": 15,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -151,7 +151,7 @@
       "label": "assets/images/Triple-Mylar-Daydream-01-render.jpg",
       "desc": "",
       "abv": 11.3,
-      "ibu": 40,
+      "ibu": 85,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -167,7 +167,7 @@
       "label": "assets/images/Tumbleweeds-render.jpg",
       "desc": "",
       "abv": 4.8,
-      "ibu": 40,
+      "ibu": 10,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -183,7 +183,7 @@
       "label": "assets/images/ROC-Viridian-Dream-render.jpg",
       "desc": "",
       "abv": 6.8,
-      "ibu": 40,
+      "ibu": 62,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -199,7 +199,7 @@
       "label": "assets/images/Triple-Space-Diamonds-render.jpg",
       "desc": "",
       "abv": 10.5,
-      "ibu": 40,
+      "ibu": 74,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",

@@ -11,18 +11,19 @@
 @import './assets/scss/_utils';
 
 
+
 /* Base Styles
    Settings for basic design globals
    ========================================================================== */
 html {
-  background: $grey-900;
-  color: $grey-050;
   font-size: 16px;
   height: 100%;
 }
 
 body {
-  font-family: $family-sans-serif;
+  background: $body-background-color;
+  color: $body-text-color;
+  font-family: $body-family;
   height: 100%;
   font-size: 1rem;
 }

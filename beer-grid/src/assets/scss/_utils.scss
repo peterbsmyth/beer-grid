@@ -1,7 +1,5 @@
-/* Design Tokens (as SCSS variables)
+/* Design Tokens: COLOR
    ========================================================================== */
-
-// Color
 
 // Neutrals
 $white:    hsl(0, 0%, 100%);
@@ -17,7 +15,6 @@ $grey-800: hsl(0, 0%, 23%);
 $grey-900: hsl(0, 0%, 13%);
 $black:    hsl(0, 0%, 0%);
 
-
 // Primary
 $teal-050: hsl(164.7, 66.2%, 96.5%);
 $teal-100: hsl(162.9, 75.7%, 87.3%);
@@ -30,9 +27,39 @@ $teal-700: hsl(171.9, 93.9%, 26.3%);
 $teal-800: hsl(172.1, 98%, 19.8%);
 $teal-900: hsl(176.4, 100%, 13.4%);
 
+// Semantic Colors
+
+// $background-color-light: ;
+// $text-on-light: ;
+// $text-subtle-on-light: ;
+// $text-muted-on-light: ;
+
+// $background-color-dark: ;
+// $text-on-dark: ;
+// $text-subtle-on-dark: ;
+// $text-muted-on-dark: ;
+
+// $background-color-brand: ;
+// $text-on-brand: ;
+// $text-subtle-on-brand: ;
+// $text-muted-on-brand: ;
 
 
-// Space
+/* Design Tokens: TYPOGRAPHY
+   ========================================================================== */
+
+// Font Family
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Font Weights
+$weight-normal: 400;
+$weight-bold: 700;
+
+
+
+/* Design Tokens: SPACING
+   ========================================================================== */
+
 // Proportionally scaled from the 8pt grid
 $space-xxs:   0.125rem; // 2pt  (px)
 $space-xs:    0.25rem;  // 4pt  (px)
@@ -43,24 +70,96 @@ $space-xl:    4rem;     // 64pt (px)
 $space-xxl:   8rem;     // 12pt (px)
 
 
-// Type
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-// Radius
+/* Design Tokens: RADII
+   ========================================================================== */
+
 $radius-s:  0.125rem;   // 2pt  (px)
 $radius-m:  0.1875rem;  // 3pt  (px)
 $radius-l:  0.375rem;   // 6pt  (px)
 
-// Elevation
+
+
+/* Design Tokens: RADII
+   ========================================================================== */
+
 $box-shadow-01: 0 4px 6px rgba($grey-900, 0.07),
                 0 5px 15px rgba($grey-900, 0.1);
 
-// Animation
+
+
+/* Design Tokens: MOTION
+   ========================================================================== */
 $easing: ease-out;
 $speed: 250ms;
 
 // Responsivity
-$desktop: 1152px;
+$desktop: 60rem;  // 960pt  (px)
+
+
+
+/* Fuctions (for automating styles, and assisting with units)
+   SCSS can be quite programatic, and helpful for design
+   ========================================================================== */
+
+// PX--REM: Designers hate math sometimes. This makes life easy.
+/// Convert a given px unit to a rem unit
+/// @param {Number} $px - Number with px unit
+/// @return {Number} Number with rem unit
+
+@function px--rem($px) {
+  @return ($px / 16px) * 1rem;
+}
+
+
+// Baseline Scale: A line-height/leading helper based on 8pt grid
+/// Get the value of a specific step in a 8pt grid scale
+/// @param {Number} $step - Degree of 8pt increments
+/// @return {Number} Value in pixels, converted from rem
+
+@function baseline-scale($step) {
+  @return (px--rem($step * 8px));
+}
+
+
+/// Get Type Size
+/// Compute the type size for the given type scale step
+/// From IBM's Carbon Design System: https://www.carbondesignsystem.com/guidelines/typography/overview/#scale
+/// @param {Number} $step
+/// @return {Number} In px
+
+@function get-type-size($step) {
+  @if $step == 1 {
+    @return 12px;
+  }
+  // Yn = Yn-1 + {INT[(n-2)/4] + 1} * 2
+  @return get-type-size($step - 1) + (floor(($step - 2) / 4) + 1) * 2;
+}
+
+
+/// Type Scale Map
+/// Type scale follows a custom formula for determining each step size and supports sizes from 12px to 92px
+/// @type Map
+
+$type-scale: ();
+@for $i from 1 through 23 {
+  $type-scale: append(
+    $type-scale,
+    px--rem(get-type-size($i))
+  );
+}
+
+
+/// Type Scale Value
+/// Get the value of a specific step in the typescale
+/// @param {Number} $step
+/// @return {Number} In rem
+
+@function type-scale($step) {
+  @return nth($type-scale, $step);
+}
+
+
 
 /* Mixins (For design pattern reusability)
    ========================================================================== */
@@ -75,51 +174,42 @@ $desktop: 1152px;
   }
 }
 
-// PX--REM: Designers hate math sometimes. This makes life easy.
-/// Convert a given px unit to a rem unit
-/// @param {Number} $px - Number with px unit
-/// @return {Number} Number with rem unit
 
-@function px--rem($px) {
-  @return ($px / 16px) * 1rem;
-}
+/* APP Variables
+   Application specific SCSS Variables
+   ========================================================================== */
 
-// Baseline Scale: A line-height/leading helper based on 8pt grid
-/// Get the value of a specific step in a 8pt grid scale
-/// @param {Number} $step - Degree of 8pt increments
-/// @return {Number} Value in pixels, converted from rem
+$body-background-color: initial;
+$body-text-color: initial;
+$body-family: initial;
 
-@function baseline-scale($step) {
-  @return (px--rem($step * 8px));
-}
+$header-background-color: initial;
+$header-color: initial;
+$header-spacing: inital;
+$header-title-color: initial;
+$header-title-weight: initial;
+$header-subtitle-color: initial;
 
-/// Get Type Size
-/// Compute the type size for the given type scale step
-/// From IBM's Carbon Design System: https://www.carbondesignsystem.com/guidelines/typography/overview/#scale
-/// @param {Number} $step
-/// @return {Number} In px
-@function get-type-size($step) {
-  @if $step == 1 {
-    @return 12px;
-  }
-  // Yn = Yn-1 + {INT[(n-2)/4] + 1} * 2
-  @return get-type-size($step - 1) + (floor(($step - 2) / 4) + 1) * 2;
-}
+$beers-spacing: initial;
+$beers-template-columns: initial;
+$beers-spacing-desktop: initial;
+$beers-template-columns-desktop: initial;
 
-/// Type Scale Map
-/// Type scale follows a custom formula for determining each step size and supports sizes from 12px to 92px
-/// @type Map
-$type-scale: ();
-@for $i from 1 through 23 {
-  $type-scale: append(
-    $type-scale,
-    px--rem(get-type-size($i))
-  );
-}
-/// Type Scale Value
-/// Get the value of a specific step in the typescale
-/// @param {Number} $step
-/// @return {Number} In rem
-@function type-scale($step) {
-  @return nth($type-scale, $step);
-}
+/* THEME
+   Dark Theme
+   ========================================================================== */
+$body-background-color: $grey-900;
+$body-text-color: $grey-050;
+$body-family: $family-sans-serif;
+
+$header-background-color: $teal-900;
+$header-color: $teal-300;
+$header-spacing: $space-xl $space-m $space-m;
+$header-title-color: $teal-500;
+$header-title-weight: $weight-bold;
+$header-subtitle-color: $header-color;
+
+$beers-spacing: $space-m;
+$beers-template-columns: 1fr 1fr;
+$beers-spacing-desktop: $space-l;
+$beers-template-columns-desktop: 1fr 1fr 1fr 1fr;
