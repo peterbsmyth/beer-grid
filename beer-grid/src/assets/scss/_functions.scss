@@ -1,0 +1,60 @@
+/* Fuctions (for automating styles, and assisting with units)
+   SCSS can be quite programatic, and helpful for design
+   ========================================================================== */
+
+// PX--REM: Designers hate math sometimes. This makes life easy.
+/// Convert a given px unit to a rem unit
+/// @param {Number} $px - Number with px unit
+/// @return {Number} Number with rem unit
+
+@function px--rem($px) {
+  @return ($px / 16px) * 1rem;
+}
+
+
+// Baseline Scale: A line-height/leading helper based on 8pt grid
+/// Get the value of a specific step in a 8pt grid scale
+/// @param {Number} $step - Degree of 8pt increments
+/// @return {Number} Value in pixels, converted from rem
+
+@function baseline-scale($step) {
+  @return (px--rem($step * 8px));
+}
+
+
+/// Get Type Size
+/// Compute the type size for the given type scale step
+/// From IBM's Carbon Design System: https://www.carbondesignsystem.com/guidelines/typography/overview/#scale
+/// @param {Number} $step
+/// @return {Number} In px
+
+@function get-type-size($step) {
+  @if $step == 1 {
+    @return 12px;
+  }
+  // Yn = Yn-1 + {INT[(n-2)/4] + 1} * 2
+  @return get-type-size($step - 1) + (floor(($step - 2) / 4) + 1) * 2;
+}
+
+
+/// Type Scale Map
+/// Type scale follows a custom formula for determining each step size and supports sizes from 12px to 92px
+/// @type Map
+
+$type-scale: ();
+@for $i from 1 through 23 {
+  $type-scale: append(
+    $type-scale,
+    px--rem(get-type-size($i))
+  );
+}
+
+
+/// Type Scale Value
+/// Get the value of a specific step in the typescale
+/// @param {Number} $step
+/// @return {Number} In rem
+
+@function type-scale($step) {
+  @return nth($type-scale, $step);
+}

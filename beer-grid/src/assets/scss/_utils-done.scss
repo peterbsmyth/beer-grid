@@ -2,16 +2,43 @@
    ========================================================================== */
 
 // Neutrals
+$white:    hsl(0, 0%, 100%);
+$grey-050: hsl(0, 0%, 97%);
+$grey-100: hsl(0, 0%, 88%);
+$grey-200: hsl(0, 0%, 81%);
+$grey-300: hsl(0, 0%, 69%);
+$grey-400: hsl(0, 0%, 62%);
+$grey-500: hsl(0, 0%, 50%);
+$grey-600: hsl(0, 0%, 38%);
+$grey-700: hsl(0, 0%, 32%);
+$grey-800: hsl(0, 0%, 23%);
+$grey-900: hsl(0, 0%, 13%);
+$black:    hsl(0, 0%, 0%);
 
 // Primary
+$teal-050: hsl(164.7, 66.2%, 96.5%);
+$teal-100: hsl(162.9, 75.7%, 87.3%);
+$teal-200: hsl(162.4, 72.4%, 74.3%);
+$teal-300: hsl(164.1, 70.1%, 63.1%);
+$teal-400: hsl(166.1, 63.9%, 48.8%);
+$teal-500: hsl(167.7, 77.8%, 40.6%);
+$teal-600: hsl(170.2, 91.4%, 31.6%);
+$teal-700: hsl(171.9, 93.9%, 26.3%);
+$teal-800: hsl(172.1, 98%, 19.8%);
+$teal-900: hsl(176.4, 100%, 13.4%);
 
 
 /* Design Tokens: TYPOGRAPHY
    ========================================================================== */
 
 // Font Family
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 
 // Font Weights
+$weight-light: 300;
+$weight-normal: 400;
+$weight-bold: 700;
 
 
 
@@ -19,15 +46,30 @@
    ========================================================================== */
 
 // Proportionally scaled from the 8pt grid
+$space-xxs:   0.125rem; // 2pt  (px)
+$space-xs:    0.25rem;  // 4pt  (px)
+$space-s:     0.5rem;   // 8pt  (px)
+$space-m:     1rem;     // 16pt (px)
+$space-l:     2rem;     // 32pt (px)
+$space-xl:    4rem;     // 64pt (px)
+$space-xxl:   8rem;     // 12pt (px)
+
 
 
 /* Design Tokens: RADII
    ========================================================================== */
 
+$radius-s:  0.125rem;   // 2pt  (px)
+$radius-m:  0.1875rem;  // 3pt  (px)
+$radius-l:  0.375rem;   // 6pt  (px)
+
 
 
 /* Design Tokens: RADII
    ========================================================================== */
+
+$box-shadow-01: 0 4px 6px rgba($grey-900, 0.07),
+                0 5px 15px rgba($grey-900, 0.1);
 
 
 
@@ -40,6 +82,38 @@
 /* Fuctions (for automating styles, and assisting with units)
    SCSS can be quite programatic, and helpful for design
    ========================================================================== */
+
+// PX to Rem Converter
+@function px--rem($px) {
+  @return ($px / 16px) * 1rem;
+}
+
+// Baseline Scale Calculator
+@function baseline-scale($step) {
+  @return (px--rem($step * 4px));
+}
+
+// IBM Carbon Functions to generate type scale
+@function get-type-size($step) {
+  @if $step == 1 {
+    @return 12px;
+  }
+  // Yn = Yn-1 + {INT[(n-2)/4] + 1} * 2
+  @return get-type-size($step - 1) + (floor(($step - 2) / 4) + 1) * 2;
+}
+
+$type-scale: ();
+@for $i from 1 through 23 {
+  $type-scale: append(
+    $type-scale,
+    px--rem(get-type-size($i))
+  );
+}
+
+// Type Scale Function
+@function type-scale($step) {
+  @return nth($type-scale, $step);
+}
 
 
 

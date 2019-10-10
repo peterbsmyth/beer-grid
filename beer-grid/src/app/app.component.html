@@ -1,14 +1,15 @@
 <header class="header">
-  <h1 class="header__title">
+  <h1 class="header__venue">
     {{ venue }}
   </h1>
-  <h2 class="header__subtitle">
+  <h2 class="header__title">
    Cans To Go
   </h2>
 </header>
 
 <main>
   <section class="beers">
+    <pre>{{ beers | json }}</pre>
     <app-beer-card
       *ngFor="let beer of beers"
       [beer]="beer">

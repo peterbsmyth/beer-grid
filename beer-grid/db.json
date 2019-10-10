@@ -1,13 +1,13 @@
 {
   "beers": [
     {
-      "id": 2,
+      "id": 1,
       "name": "Double Orange Chroma",
       "style": "IPA - Imperial",
-      "label": "assets/images/Double-Orange-Chroma.webp",
+      "label": "assets/images/Double-Orange-Chroma.jpg",
       "desc": "",
       "abv": 8.2,
-      "ibu": 40,
+      "ibu": 70,
       "brewery": {
         "name": "Other Half",
         "city": "Rochester",
@@ -17,96 +17,16 @@
       }
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "Emerald Cities",
       "style": "IPA - Imperial",
-      "label": "assets/images/Emerald-Cities.webp",
+      "label": "assets/images/Emerald-Cities.jpg",
       "desc": "",
       "abv": 7.9,
-      "ibu": 40,
+      "ibu": 75,
       "brewery": {
         "name": "Other Half",
         "city": "Rochester",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
-      "id": 7,
-      "name": "All Jream Everything",
-      "style": "Sour - Other",
-      "label": "assets/images/All-Jream-Everything-w_-Burley-Oak.webp",
-      "desc": "",
-      "abv": 8.0,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
-      "id": 9,
-      "name": "It's Always Green In Sonoma",
-      "style": "IPA - Imperial / Double",
-      "label": "assets/images/Its-Always-Green-in-Sonoma-w_-Track.webp",
-      "desc": "",
-      "abv": 8.6,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
-      "id": 13,
-      "name": "DDH Did I Make Myself Clear?",
-      "style": "IPA - American",
-      "label": "assets/images/DDH-Did-I-Make-Myself-Clear-1.webp",
-      "desc": "",
-      "abv": 7.3,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": ""
-      }
-    },
-    {
-      "id": 8,
-      "name": "Silhouette Daydream Double Brunch Crunchee Peach Granola",
-      "style": "IPA - Sour",
-      "label": "assets/images/Silhouette-Daydream-w-Hudson-Valley-1.webp",
-      "desc": "",
-      "abv": 8.0,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
-        "state": "NY",
-        "country": "United States",
-        "collab": "Hudson Valley"
-      }
-    },
-    {
-      "id": 11,
-      "name": "Utica Greens",
-      "style": "IPA - Imperial / Double New England",
-      "label": "assets/images/Utica-Greens.webp",
-      "desc": "",
-      "abv": 9.1,
-      "ibu": 40,
-      "brewery": {
-        "name": "Other Half",
-        "city": "Brooklyn",
         "state": "NY",
         "country": "United States",
         "collab": ""
@@ -114,12 +34,28 @@
     },
     {
       "id": 3,
-      "name": "Gravity Gumbo",
-      "style": "Stout - Imperial / Double",
-      "label": "assets/images/Gravity-Gumbo-w-Parish.webp",
+      "name": "All Jream Everything",
+      "style": "Sour - Other",
+      "label": "assets/images/All-Jream-Everything-w_-Burley-Oak.jpg",
       "desc": "",
-      "abv": 14.5,
-      "ibu": 40,
+      "abv": 8.0,
+      "ibu": 35,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 4,
+      "name": "It's Always Green In Sonoma",
+      "style": "IPA - Imperial / Double",
+      "label": "assets/images/Its-Always-Green-in-Sonoma-w_-Track.jpg",
+      "desc": "",
+      "abv": 8.6,
+      "ibu": 80,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -130,12 +66,12 @@
     },
     {
       "id": 5,
-      "name": "Deep Orbit Antares",
-      "style": "Stout - Imperial / Double",
-      "label": "assets/images/Deep-Orbit-Antares-Nutter-Butter.webp",
+      "name": "DDH Did I Make Myself Clear?",
+      "style": "IPA - American",
+      "label": "assets/images/DDH-Did-I-Make-Myself-Clear-1.jpg",
       "desc": "",
-      "abv": 15.5,
-      "ibu": 40,
+      "abv": 7.3,
+      "ibu": 77,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -146,12 +82,60 @@
     },
     {
       "id": 6,
-      "name": "Triple Mylar Daydream",
-      "style": "IPA - Triple",
-      "label": "assets/images/Triple-Mylar-Daydream-01-render.webp",
+      "name": "Silhouette Daydream Double Brunch Crunchee Peach Granola",
+      "style": "IPA - Sour",
+      "label": "assets/images/Silhouette-Daydream-w-Hudson-Valley-1.jpg",
       "desc": "",
-      "abv": 11.3,
-      "ibu": 40,
+      "abv": 8.0,
+      "ibu": 20,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": "Hudson Valley"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Utica Greens",
+      "style": "IPA - Imperial / Double New England",
+      "label": "assets/images/Utica-Greens.jpg",
+      "desc": "",
+      "abv": 9.1,
+      "ibu": 68,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 8,
+      "name": "Gravity Gumbo",
+      "style": "Stout - Imperial / Double",
+      "label": "assets/images/Gravity-Gumbo-w-Parish.jpg",
+      "desc": "",
+      "abv": 14.5,
+      "ibu": 15,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 9,
+      "name": "Deep Orbit Antares",
+      "style": "Stout - Imperial / Double",
+      "label": "assets/images/Deep-Orbit-Antares-Nutter-Butter.jpg",
+      "desc": "",
+      "abv": 15.5,
+      "ibu": 15,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -162,12 +146,28 @@
     },
     {
       "id": 10,
+      "name": "Triple Mylar Daydream",
+      "style": "IPA - Triple",
+      "label": "assets/images/Triple-Mylar-Daydream-01-render.jpg",
+      "desc": "",
+      "abv": 11.3,
+      "ibu": 85,
+      "brewery": {
+        "name": "Other Half",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "collab": ""
+      }
+    },
+    {
+      "id": 11,
       "name": "Tumbleweeds",
       "style": "Lager - Helles",
-      "label": "assets/images/Tumbleweeds-render.webp",
+      "label": "assets/images/Tumbleweeds-render.jpg",
       "desc": "",
       "abv": 4.8,
-      "ibu": 40,
+      "ibu": 10,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -180,10 +180,10 @@
       "id": 12,
       "name": "Viridian Dream",
       "style": "IPA - New England",
-      "label": "assets/images/ROC-Viridian-Dream-render.webp",
+      "label": "assets/images/ROC-Viridian-Dream-render.jpg",
       "desc": "",
       "abv": 6.8,
-      "ibu": 40,
+      "ibu": 62,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",
@@ -193,13 +193,13 @@
       }
     },
     {
-      "id": 1,
+      "id": 13,
       "name": "Triple Space Diamonds",
       "style": "IPA - Imperial / Double",
-      "label": "assets/images/Triple-Space-Diamonds-render.webp",
+      "label": "assets/images/Triple-Space-Diamonds-render.jpg",
       "desc": "",
       "abv": 10.5,
-      "ibu": 40,
+      "ibu": 74,
       "brewery": {
         "name": "Other Half",
         "city": "Brooklyn",

@@ -2,83 +2,71 @@
 
 .beer {
   height: 100%;
-  color: $grey-050;
-  overflow: hidden;
+  color: $card-color;
+  display: flex;
+  flex-direction: column;
 
-  // Layout
   &__image {
     width: 100%;
-    height: 17rem;
+    height: $card-image-height;
     object-fit: cover;
-    background: $grey-800;
-    border-radius: $radius-l;
+    border-radius: $card-radius;
+    box-shadow: $card-image-shadow;
 
     @include desktop {
-      height: 26rem;
+      height: $card-image-height-desktop;
     }
   }
 
   &__header {
-    padding-top: $space-m;
+    padding-bottom: $card-spacing-vertical;
   }
 
-
   &__name {
-    font-weight: bold;
-    font-size: type-scale(4);
-    line-height: baseline-scale(2);
-    margin-bottom: $space-xs;
+    @include headline;
+    margin-top: $card-spacing-vertical;
   }
 
   &__style {
-    font-weight: bold;
-    font-size: type-scale(2);
-    line-height: baseline-scale(2);
-    margin-bottom: $space-s;
-    color: $teal-400;
+    @include subheadline;
+    color: $card-color-brand;
   }
 
   &__meta {
-    margin-bottom: $space-m;
-    color: $teal-500;
-    text-transform: uppercase;
-    font-size: type-scale(3);
-    line-height: baseline-scale(2);
+    color: $card-color-brand;
+    justify-self: flex-end;
+    margin-top: auto;
+  }
+
+  &__meta-label {
+    color: $card-color-subtle;
+    display: block;
+    @include caption;
+  }
+
+  &__meta-value {
+    @include data-point;
+    color: $card-color-brand;
   }
 
   &__abv,
   &__ibu {
     display: inline-block;
-    margin-right: $space-s;
+    margin-right: $card-spacing-horizontal;
   }
-
-  &__meta-label {
-    color: $grey-500;
-    display: block;
-    font-weight: bold;
-    font-size: px--rem(10px);
-  }
-
 }
 
 .brewery {
-  font-weight: bold;
-  font-size: px--rem(10px);
-  line-height: baseline-scale(2);
-  margin-bottom: $space-s;
-  color: $grey-600;
-  text-transform: uppercase;
+  @include caption;
+  justify-self: flex-end;
+  margin-top: $card-spacing-vertical;
 
   &__name {
-    color: $grey-500;
-    line-height: baseline-scale(1);
+    color: $card-color-subtle;
   }
 
 
-  &__city,
-  &__country {
-    font-size: px--rem(9px);
-    display: inline-block;
-    margin-right: $space-xs;
+  &__location{
+    color: $card-color-muted;
   }
 }

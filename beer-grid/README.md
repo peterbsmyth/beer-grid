@@ -6,6 +6,23 @@ A demonstration project for AngularNYC October Meetup as part of the *Web Design
 This demo project is a sample walkthrough on how to create a beer board for display in a bar or restaurant, as well as on a mobile device. The goal of the walkthrough is to demonstrate how to design in the browser, using Angular as our platform to create our design using real data. ( No Lorem Ipsum please...)
 
 
+## Resources
+
+### Chrome Plugins
+
+#### Baseliner
+A great plugin for visualizing vertical rhythm in the browser
+
+#### Font Swap for Google Fonts
+A tool that allows near-instant swapping of google fonts on any screen
+
+
+### Articles
+
+
+
+
+
 ## Angular Project Specifics
 ### Development server
 
