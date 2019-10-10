@@ -1,5 +1,9 @@
 <div class="beer">
-  <img class="beer__image" [src]="beer.label"/>
+  <img
+    class="beer__image"
+    [src]="beer.label"
+    [alt]="beer.name"
+    loading="lazy" />
   <header class="beer__header">
     <p class="beer__name">{{ beer.name }}</p>
     <p class="beer__style">{{ beer.style }}</p>
@@ -8,16 +12,16 @@
   <div class="beer__meta">
     <p class="beer__abv">
       <span class="beer__meta-label">abv</span>
-      {{ beer.abv }}
+      <span class="beer__meta-value">{{ beer.abv }}</span>
     </p>
     <p class="beer__ibu">
       <span class="beer__meta-label">ibu</span>
-      {{ beer.ibu }}
+      <span class="beer__meta-value">{{ beer.ibu }}</span>
     </p>
   </div>
 
   <div class="brewery">
     <p class="brewery__name">{{ beer.brewery.name }}</p>
-    <p class="brewery__city">{{ beer.brewery.city }}, {{ beer.brewery.state }}</p>
+    <p class="brewery__location">{{ beer.brewery.city }}, {{ beer.brewery.state }}</p>
   </div>
 </div>

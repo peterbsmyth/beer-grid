@@ -2,58 +2,16 @@
    ========================================================================== */
 
 // Neutrals
-$white:    hsl(0, 0%, 100%);
-$grey-050: hsl(0, 0%, 97%);
-$grey-100: hsl(0, 0%, 88%);
-$grey-200: hsl(0, 0%, 81%);
-$grey-300: hsl(0, 0%, 69%);
-$grey-400: hsl(0, 0%, 62%);
-$grey-500: hsl(0, 0%, 50%);
-$grey-600: hsl(0, 0%, 38%);
-$grey-700: hsl(0, 0%, 32%);
-$grey-800: hsl(0, 0%, 23%);
-$grey-900: hsl(0, 0%, 13%);
-$black:    hsl(0, 0%, 0%);
 
 // Primary
-$teal-050: hsl(164.7, 66.2%, 96.5%);
-$teal-100: hsl(162.9, 75.7%, 87.3%);
-$teal-200: hsl(162.4, 72.4%, 74.3%);
-$teal-300: hsl(164.1, 70.1%, 63.1%);
-$teal-400: hsl(166.1, 63.9%, 48.8%);
-$teal-500: hsl(167.7, 77.8%, 40.6%);
-$teal-600: hsl(170.2, 91.4%, 31.6%);
-$teal-700: hsl(171.9, 93.9%, 26.3%);
-$teal-800: hsl(172.1, 98%, 19.8%);
-$teal-900: hsl(176.4, 100%, 13.4%);
-
-// Semantic Colors
-
-// $background-color-light: ;
-// $text-on-light: ;
-// $text-subtle-on-light: ;
-// $text-muted-on-light: ;
-
-// $background-color-dark: ;
-// $text-on-dark: ;
-// $text-subtle-on-dark: ;
-// $text-muted-on-dark: ;
-
-// $background-color-brand: ;
-// $text-on-brand: ;
-// $text-subtle-on-brand: ;
-// $text-muted-on-brand: ;
 
 
 /* Design Tokens: TYPOGRAPHY
    ========================================================================== */
 
 // Font Family
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 // Font Weights
-$weight-normal: 400;
-$weight-bold: 700;
 
 
 
@@ -61,40 +19,21 @@ $weight-bold: 700;
    ========================================================================== */
 
 // Proportionally scaled from the 8pt grid
-$space-xxs:   0.125rem; // 2pt  (px)
-$space-xs:    0.25rem;  // 4pt  (px)
-$space-s:     0.5rem;   // 8pt  (px)
-$space-m:     1rem;     // 16pt (px)
-$space-l:     2rem;     // 32pt (px)
-$space-xl:    4rem;     // 64pt (px)
-$space-xxl:   8rem;     // 12pt (px)
-
 
 
 /* Design Tokens: RADII
    ========================================================================== */
 
-$radius-s:  0.125rem;   // 2pt  (px)
-$radius-m:  0.1875rem;  // 3pt  (px)
-$radius-l:  0.375rem;   // 6pt  (px)
-
 
 
 /* Design Tokens: RADII
    ========================================================================== */
-
-$box-shadow-01: 0 4px 6px rgba($grey-900, 0.07),
-                0 5px 15px rgba($grey-900, 0.1);
 
 
 
 /* Design Tokens: MOTION
    ========================================================================== */
-$easing: ease-out;
-$speed: 250ms;
 
-// Responsivity
-$desktop: 60rem;  // 960pt  (px)
 
 
 
@@ -102,114 +41,68 @@ $desktop: 60rem;  // 960pt  (px)
    SCSS can be quite programatic, and helpful for design
    ========================================================================== */
 
-// PX--REM: Designers hate math sometimes. This makes life easy.
-/// Convert a given px unit to a rem unit
-/// @param {Number} $px - Number with px unit
-/// @return {Number} Number with rem unit
-
-@function px--rem($px) {
-  @return ($px / 16px) * 1rem;
-}
-
-
-// Baseline Scale: A line-height/leading helper based on 8pt grid
-/// Get the value of a specific step in a 8pt grid scale
-/// @param {Number} $step - Degree of 8pt increments
-/// @return {Number} Value in pixels, converted from rem
-
-@function baseline-scale($step) {
-  @return (px--rem($step * 8px));
-}
-
-
-/// Get Type Size
-/// Compute the type size for the given type scale step
-/// From IBM's Carbon Design System: https://www.carbondesignsystem.com/guidelines/typography/overview/#scale
-/// @param {Number} $step
-/// @return {Number} In px
-
-@function get-type-size($step) {
-  @if $step == 1 {
-    @return 12px;
-  }
-  // Yn = Yn-1 + {INT[(n-2)/4] + 1} * 2
-  @return get-type-size($step - 1) + (floor(($step - 2) / 4) + 1) * 2;
-}
-
-
-/// Type Scale Map
-/// Type scale follows a custom formula for determining each step size and supports sizes from 12px to 92px
-/// @type Map
-
-$type-scale: ();
-@for $i from 1 through 23 {
-  $type-scale: append(
-    $type-scale,
-    px--rem(get-type-size($i))
-  );
-}
-
-
-/// Type Scale Value
-/// Get the value of a specific step in the typescale
-/// @param {Number} $step
-/// @return {Number} In rem
-
-@function type-scale($step) {
-  @return nth($type-scale, $step);
-}
-
 
 
 /* Mixins (For design pattern reusability)
    ========================================================================== */
+
 
 // Desktop Media Query
 /// Creates a Media Query for anything larger than tablet sizes
 /// We use a desktop size token (SCSS variable) to set the viewport width for desktop layouts
 /// No need for a mobile version, as we're designing mobile first! :)
 @mixin desktop {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 60rem) {
     @content;
   }
 }
 
 
-/* APP Variables
-   Application specific SCSS Variables
+
+/* APP Theme
+   Application specific SCSS Variables and Mixins
    ========================================================================== */
 
-$body-background-color: initial;
-$body-text-color: initial;
-$body-family: initial;
+$body-background-color:             initial;
+$body-text-color:                   initial;
+$body-family:                       initial;
 
-$header-background-color: initial;
-$header-color: initial;
-$header-spacing: inital;
-$header-title-color: initial;
-$header-title-weight: initial;
-$header-subtitle-color: initial;
+$header-background-color:           initial;
+$header-color:                      initial;
+$header-color-muted:                initial;
+$header-spacing:                    initial;
 
-$beers-spacing: initial;
-$beers-template-columns: initial;
-$beers-spacing-desktop: initial;
-$beers-template-columns-desktop: initial;
+$layout-spacing-horizontal:         initial;
+$layout-spacing-vertical:           initial;
+$layout-template-columns:           initial;
+$layout-spacing-desktop-horizontal: initial;
+$layout-spacing-desktop-vertical:   initial;
+$layout-template-columns-desktop:   initial;
 
-/* THEME
-   Dark Theme
-   ========================================================================== */
-$body-background-color: $grey-900;
-$body-text-color: $grey-050;
-$body-family: $family-sans-serif;
+$card-spacing-vertical:             initial;
+$card-spacing-horizontal:           initial;
+$card-color:                        initial;
+$card-color-subtle:                 initial;
+$card-color-muted:                  initial;
+$card-color-brand:                  initial;
+$card-radius:                       initial;
+$card-image-height:                 initial;
+$card-image-height-desktop:         initial;
+$card-image-shadow:                 initial;
 
-$header-background-color: $teal-900;
-$header-color: $teal-300;
-$header-spacing: $space-xl $space-m $space-m;
-$header-title-color: $teal-500;
-$header-title-weight: $weight-bold;
-$header-subtitle-color: $header-color;
+// Typography Mixins
+@mixin title {
+}
 
-$beers-spacing: $space-m;
-$beers-template-columns: 1fr 1fr;
-$beers-spacing-desktop: $space-l;
-$beers-template-columns-desktop: 1fr 1fr 1fr 1fr;
+@mixin headline {
+}
+
+@mixin subheadline {
+}
+
+@mixin data-point {
+}
+
+@mixin caption {
+}
+

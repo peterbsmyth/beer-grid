@@ -5,28 +5,26 @@
   background: $header-background-color;
   color: $header-color;
 
-  &__title {
-    font-weight: $header-title-weight;
-    font-size: type-scale(2);
-    line-height: baseline-scale(2);
-    color: $header-title-color;
+  &__venue {
+    @include subheadline;
+    color: $header-color-muted;
   }
 
-  &__subtitle {
-    font-size: type-scale(7);
-    line-height: baseline-scale(4);
+  &__title {
+    @include title;
   }
 }
 
 .beers {
-  padding: $beers-spacing;
+  padding: $layout-spacing-horizontal;
   display: grid;
-  grid-column-gap: $beers-spacing;
-  grid-row-gap: $beers-spacing;
-  grid-template-columns: $beers-template-columns;
+  grid-column-gap: $layout-spacing-horizontal;
+  grid-row-gap: $layout-spacing-vertical;
+  grid-template-columns: $layout-template-columns;
   @include desktop {
     display: grid;
-    grid-template-columns: $beers-template-columns-desktop;
-    grid-row-gap: $beers-spacing-desktop;
+    grid-template-columns: $layout-template-columns-desktop;
+    grid-column-gap: $layout-spacing-desktop-horizontal;
+    grid-row-gap: $layout-spacing-desktop-vertical;
   }
 }
