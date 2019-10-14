@@ -10,6 +10,41 @@ $weight-light:      300;
 $weight-normal:     400;
 $weight-bold:       700;
 
+// Typography Mixins
+@mixin large-title {
+  font-size: type-scale(8);
+  line-height: baseline-scale(8);
+  font-weight: $weight-light;
+}
+
+@mixin title {
+  font-size: type-scale(6);
+  line-height: baseline-scale(8);
+}
+
+@mixin headline {
+  font-size: type-scale(3);
+  line-height: baseline-scale(4);
+  font-weight: $weight-bold;
+}
+
+@mixin subheadline {
+  font-size: type-scale(2);
+  line-height: baseline-scale(4);
+  font-weight: $weight-bold;
+}
+
+@mixin data-point {
+  font-size: type-scale(3);
+  line-height: baseline-scale(4);
+}
+
+@mixin caption {
+  font-size: px-rem(10px);
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+}
+
 
 /* SPACING
    ========================================================================== */

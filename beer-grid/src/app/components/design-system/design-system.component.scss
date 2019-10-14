@@ -1,0 +1,163 @@
+@import "utils";
+
+section {
+  padding: $space-m;
+}
+
+header {
+  margin-bottom: $space-l;
+}
+
+article {
+  margin-bottom: $space-l;
+  font-size: 1rem;
+
+  > * + *  {
+    margin-top: $space-m;
+  }
+}
+
+h1, h2 {
+  @include large-title;
+}
+
+h3 {
+  @include title;
+}
+
+p {
+  font-size: type-scale(3);
+  line-height: baseline-scale(5);
+}
+
+.family-sans-serif { font-family: $family-sans-serif; }
+.family-serif { font-family: $family-serif; }
+
+.weight-light { font-weight: $weight-light; }
+.weight-normal { font-weight: $weight-normal; }
+.weight-bold { font-weight: $weight-bold; }
+
+.large-title { @include large-title; }
+.title { @include title; }
+.headline { @include headline; }
+.subheadline { @include subheadline; }
+.data-point { @include data-point; }
+.caption { @include caption; }
+
+.spacing-boxes {
+  > * + *  {
+    margin-top: $space-m;
+  }
+}
+.space-box {
+  display: block;
+  background: magenta;
+}
+.space-xxs { 
+  .space-box {
+    height: $space-xxs;
+    width: $space-xxs;
+  }
+}
+.space-xs { 
+  .space-box {
+    height: $space-xs;
+    width: $space-xs;
+  }
+}
+.space-s { 
+  .space-box {
+    height: $space-s;
+    width: $space-s;
+  }
+}
+.space-m { 
+  .space-box {
+    height: $space-m;
+    width: $space-m;
+  }
+}
+.space-l { 
+  .space-box {
+    height: $space-l;
+    width: $space-l;
+  }
+}
+.space-xl { 
+  .space-box {
+    height: $space-xl;
+    width: $space-xl;
+  }
+}
+.space-xxl { 
+  .space-box {
+    height: $space-xxl;
+    width: $space-xxl;
+  }
+}
+
+.color-list {
+  li {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.swatch {
+  width: $space-xl;
+  height: $space-xl;
+  background: $white;
+  display: block;
+  margin-right: $space-s;
+}
+
+.white .swatch { background: $white; }
+.grey-050 .swatch { background: $grey-050; }
+.grey-100 .swatch { background: $grey-100; }
+.grey-200 .swatch { background: $grey-200; }
+.grey-300 .swatch { background: $grey-300; }
+.grey-400 .swatch { background: $grey-400; }
+.grey-500 .swatch { background: $grey-500; }
+.grey-600 .swatch { background: $grey-600; }
+.grey-700 .swatch { background: $grey-700; }
+.grey-800 .swatch { background: $grey-800; }
+.grey-900 .swatch { background: $grey-900; }
+.black .swatch { background: $black; }
+
+.green-050 .swatch { background: $green-050; }
+.green-100 .swatch { background: $green-100; }
+.green-200 .swatch { background: $green-200; }
+.green-300 .swatch { background: $green-300; }
+.green-400 .swatch { background: $green-400; }
+.green-500 .swatch { background: $green-500; }
+.green-600 .swatch { background: $green-600; }
+.green-700 .swatch { background: $green-700; }
+.green-800 .swatch { background: $green-800; }
+.green-900 .swatch { background: $green-900; }
+
+.radii-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $space-m;
+}
+.radius-box {
+  width: 100%;
+  height: $space-xxl;
+  background: $white;
+  display: block;
+  margin-bottom: $space-m;
+}
+.radius-s .radius-box { border-radius: $radius-s; }
+.radius-m .radius-box { border-radius: $radius-m; }
+.radius-l .radius-box { border-radius: $radius-l; }
+
+.shadow-box {
+  width: $space-xxl;
+  height: $space-xxl;
+  background: $white;
+  display: block;
+  margin-bottom: $space-m;
+}
+.box-shadow-01 .shadow-box {
+  box-shadow: $box-shadow-01;
+}
