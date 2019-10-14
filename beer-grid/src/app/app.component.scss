@@ -11,7 +11,7 @@
   }
 
   &__title {
-    @include title;
+    @include large-title;
   }
 }
 
@@ -21,7 +21,7 @@
   grid-column-gap: $layout-spacing-horizontal;
   grid-row-gap: $layout-spacing-vertical;
   grid-template-columns: $layout-template-columns;
-  @include desktop {
+  @media screen and (min-width: 60rem) {
     display: grid;
     grid-template-columns: $layout-template-columns-desktop;
     grid-column-gap: $layout-spacing-desktop-horizontal;

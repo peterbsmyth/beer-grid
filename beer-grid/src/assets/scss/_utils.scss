@@ -1,108 +1,20 @@
-/* Design Tokens: COLOR
-   ========================================================================== */
-
-// Neutrals
-
-// Primary
-
-
-/* Design Tokens: TYPOGRAPHY
-   ========================================================================== */
-
-// Font Family
-
-// Font Weights
-
-
-
-/* Design Tokens: SPACING
-   ========================================================================== */
-
-// Proportionally scaled from the 8pt grid
-
-
-/* Design Tokens: RADII
-   ========================================================================== */
-
-
-
-/* Design Tokens: RADII
-   ========================================================================== */
-
-
-
-/* Design Tokens: MOTION
-   ========================================================================== */
-
-
-
-
-/* Fuctions (for automating styles, and assisting with units)
+/* Functions (for automating styles, and assisting with units)
    SCSS can be quite programatic, and helpful for design
    ========================================================================== */
+@import 'functions';
 
 
-
-/* Mixins (For design pattern reusability)
+/* Design Tokens
+   Smallest pieces of design information to be scaled across a product or application.
    ========================================================================== */
+@import 'design-tokens';
+// @import 'design-tokens-done';
 
 
-// Desktop Media Query
-/// Creates a Media Query for anything larger than tablet sizes
-/// We use a desktop size token (SCSS variable) to set the viewport width for desktop layouts
-/// No need for a mobile version, as we're designing mobile first! :)
-@mixin desktop {
-  @media screen and (min-width: 60rem) {
-    @content;
-  }
-}
-
-
-
-/* APP Theme
+/* Design Themes
    Application specific SCSS Variables and Mixins
    ========================================================================== */
-
-$body-background-color:             initial;
-$body-text-color:                   initial;
-$body-family:                       initial;
-
-$header-background-color:           initial;
-$header-color:                      initial;
-$header-color-muted:                initial;
-$header-spacing:                    initial;
-
-$layout-spacing-horizontal:         initial;
-$layout-spacing-vertical:           initial;
-$layout-template-columns:           initial;
-$layout-spacing-desktop-horizontal: initial;
-$layout-spacing-desktop-vertical:   initial;
-$layout-template-columns-desktop:   initial;
-
-$card-spacing-vertical:             initial;
-$card-spacing-horizontal:           initial;
-$card-color:                        initial;
-$card-color-subtle:                 initial;
-$card-color-muted:                  initial;
-$card-color-brand:                  initial;
-$card-radius:                       initial;
-$card-image-height:                 initial;
-$card-image-height-desktop:         initial;
-$card-image-shadow:                 initial;
-
-// Typography Mixins
-@mixin title {
-}
-
-@mixin headline {
-}
-
-@mixin subheadline {
-}
-
-@mixin data-point {
-}
-
-@mixin caption {
-}
+@import 'design-blank';
+// @import 'design-dark';
+// @import 'design-light';
 

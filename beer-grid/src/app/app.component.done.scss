@@ -2,14 +2,14 @@
 
 .header {
   padding: $space-xl $space-m $space-m;
-  background: $teal-900;
-  color: $teal-300;
+  background: $green-900;
+  color: $green-300;
 
   &__title {
     font-weight: bold;
     font-size: type-scale(2);
     line-height: baseline-scale(2);
-    color: $teal-500;
+    color: $green-500;
   }
 
   &__subtitle {
@@ -24,7 +24,7 @@
   grid-column-gap: $space-m;
   grid-row-gap: $space-m;
   grid-template-columns: 1fr 1fr;
-  @include desktop {
+  @media screen and (min-width: 60rem) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: $space-l;
