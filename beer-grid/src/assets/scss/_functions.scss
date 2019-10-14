@@ -1,4 +1,4 @@
-/* Fuctions (for automating styles, and assisting with units)
+/* Functions (for automating styles, and assisting with units)
    SCSS can be quite programatic, and helpful for design
    ========================================================================== */
 
@@ -13,18 +13,22 @@
 
 
 // Baseline Scale: A line-height/leading helper based on 8pt grid
-/// Get the value of a specific step in a 8pt grid scale
-/// @param {Number} $step - Degree of 8pt increments
+/// Get the value of a specific step in a 4pt grid scale
+/// @param {Number} $step - Degree of 4pt increments
 /// @return {Number} Value in pixels, converted from rem
 
 @function baseline-scale($step) {
-  @return (px-rem($step * 8px));
+  @return (px-rem($step * 4px));
 }
 
 
+/* Typography Functions
+   From IBM's Carbon Design System: https://www.carbondesignsystem.com/guidelines/typography/overview/#scale
+   ========================================================================== */
+
 /// Get Type Size
 /// Compute the type size for the given type scale step
-/// From IBM's Carbon Design System: https://www.carbondesignsystem.com/guidelines/typography/overview/#scale
+/// 
 /// @param {Number} $step
 /// @return {Number} In px
 
