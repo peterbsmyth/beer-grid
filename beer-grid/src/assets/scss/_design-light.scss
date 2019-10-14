@@ -7,7 +7,7 @@ $body-family: $family-serif;
 
 $header-background-color: $grey-900;
 $header-color: $white;
-$header-color-muted: $teal-600;
+$header-color-muted: $green-600;
 $header-spacing: $space-l $space-m $space-s;
 
 $layout-spacing-horizontal: $space-s;
@@ -22,7 +22,7 @@ $card-spacing-horizontal: $space-s;
 $card-color: $grey-900;
 $card-color-subtle: $grey-800;
 $card-color-muted: $grey-600;
-$card-color-brand: $teal-600;
+$card-color-brand: $green-600;
 $card-radius: $radius-s;
 $card-image-height: 21rem;
 $card-image-height-desktop: 26rem;
@@ -57,7 +57,7 @@ $card-image-shadow: $box-shadow-01;
 }
 
 @mixin caption {
-  font-size: px--rem(10px);
+  font-size: px-rem(10px);
   font-weight: $weight-bold;
   text-transform: uppercase;
 }

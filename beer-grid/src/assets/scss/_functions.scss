@@ -2,12 +2,12 @@
    SCSS can be quite programatic, and helpful for design
    ========================================================================== */
 
-// PX--REM: Designers hate math sometimes. This makes life easy.
+// px-rem: Designers hate math sometimes. This makes life easy.
 /// Convert a given px unit to a rem unit
 /// @param {Number} $px - Number with px unit
 /// @return {Number} Number with rem unit
 
-@function px--rem($px) {
+@function px-rem($px) {
   @return ($px / 16px) * 1rem;
 }
 
@@ -18,7 +18,7 @@
 /// @return {Number} Value in pixels, converted from rem
 
 @function baseline-scale($step) {
-  @return (px--rem($step * 8px));
+  @return (px-rem($step * 8px));
 }
 
 
@@ -45,7 +45,7 @@ $type-scale: ();
 @for $i from 1 through 23 {
   $type-scale: append(
     $type-scale,
-    px--rem(get-type-size($i))
+    px-rem(get-type-size($i))
   );
 }
 

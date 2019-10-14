@@ -1,0 +1,43 @@
+
+$body-background-color:             initial;
+$body-text-color:                   initial;
+$body-family:                       initial;
+
+$header-background-color:           initial;
+$header-color:                      initial;
+$header-color-muted:                initial;
+$header-spacing:                    initial;
+
+$layout-spacing-horizontal:         initial;
+$layout-spacing-vertical:           initial;
+$layout-template-columns:           initial;
+$layout-spacing-desktop-horizontal: initial;
+$layout-spacing-desktop-vertical:   initial;
+$layout-template-columns-desktop:   initial;
+
+$card-spacing-vertical:             initial;
+$card-spacing-horizontal:           initial;
+$card-color:                        initial;
+$card-color-subtle:                 initial;
+$card-color-muted:                  initial;
+$card-color-brand:                  initial;
+$card-radius:                       initial;
+$card-image-height:                 initial;
+$card-image-height-desktop:         initial;
+$card-image-shadow:                 initial;
+
+// Typography Mixins
+@mixin title {
+}
+
+@mixin headline {
+}
+
+@mixin subheadline {
+}
+
+@mixin data-point {
+}
+
+@mixin caption {
+}
