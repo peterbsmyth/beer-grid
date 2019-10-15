@@ -1,117 +1,66 @@
-# Spectrum
+# BeerGrid
 
-## About
-A collaborative Design and Development Process For Teams Who Can't Product Good And Wanna Learn To Do Other Stuff Good Too 
+## No Lorem Ipsum please...
 
-## Topics
+This demo project is a sample walkthrough on how to create a beer board for display in a bar, at a restaurant, and on a smartphone. The goal of the walkthrough is to demonstrate how to design in the browser, using Angular as our platform to create our design using real data. 
 
-### Structure
+### Who Are Design Technologists?
+
+<a href="https://www.youtube.com/watch?v=BMb4Sd3N-s4">![Who are Design Technologists?](/youtube.png)</a>
+> James Gibson Introduces Design Technology
+
+## Resources & Articles
+
+### Color
+- [Re-approaching Color – Lyft Design](https://design.lyft.com/re-approaching-color-9e604ba22c88)\
+Sharing a new way to building color systems for accessible UIs that scale. 
+- [ColorBox – Lyft Design](https://www.colorbox.io) HSL Color Tool. Provides accessible color variants for for palettes in the HSL color model.
+- [Color in Design Systems – EightShapes](https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3)\
+16 Tips for Setting Up a Color System That Endures
+- [Tips for Creating a Dark Mode Design – Refactoring UI](https://twitter.com/steveschoger/status/1151160261170126850/photo/1)
+
+### Spacing and 8pt Grid
+
+- [The 8pt Grid – SpecFM](https://spec.fm/specifics/8-pt-grid)\
+Using multiples of 8 to define dimensions, padding, and margin of elements.
+- [Space in Design Systems – EightShapes](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62)\
+From Basics to Expanded Concepts to Apply Space with Intent
 - [Intro to the 8pt Grid System – Pivotal Labs](https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632)
-- [The 8pt Grid](https://spec.fm/specifics/8-pt-grid)
-- [The Vignelli Canon – Massimo Vignelli](https://openlab.citytech.cuny.edu/desantistypographicdesign2427fall1d210/files/2017/11/Vignelli_canon.pdf)
-- [Ether](https://ether.thescenery.co/)
-___
-
-### UX
-
-#### Concepts
-- [Laws of UX](https://lawsofux.com)
-#### Service Design
-- user stories as the deliverable
-- all the customer touches
-#### User Testing
-  - recording users
-  - screen recording
-  - and talking through interactions
-  - virtual user testing
-
-#### Analytics
-[Hotjar – The Fast and Visual Way to Understand Your Users](https://www.hotjar.com)
-
-___
-
-### Design Systems
-- component audits
-  - UX patterns can drift over time
-  - go through every interface and insure consistency and appropriateness
-- [Design Technologists at Indeed](https://medium.com/indeed-design/what-is-a-design-technologist-6431531f0d48)
-
-#### Design Tokens
-- [Tokens in Design Systems – Nathan Curtis](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421)
-- [What are Design Tokens?](https://css-tricks.com/what-are-design-tokens)
-- [Size in Design Tokens](https://medium.com/eightshapes-llc/size-in-design-systems-64f234aec519)
-
-___
-
-### Processes
-- [Getting Real – The Smarter, Faster, easier way to build a successful web application](https://basecamp.com/books/Getting%20Real.pdf)
-- [Shape Up – Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup)
-- [The Spirit... of Sprints](https://medium.com/@johnpcutler/the-spirit-of-sprints-75a38354bd7b)
-- EPD
-- scrum
-  - product owner
-  - scrum master
-  - dev team members
-
-#### Outline
-1. Gather User Requirements with User Interviews
-2. Create a Product Backlog of User Stories
-3. Prototype
-  1. Data Models
-  2. User Interface
-  3. API
-4. Iterate on Prototypes (worth expansion)
-5. Connect API and User Interface through Front-end State Management
-6. Deploy to staging servers
-___
-
-### The State of Frontend Design
-- [Frontend Design, React, and a bridge over the great divide](http://bradfrost.com/blog/post/frontend-design-react-and-a-bridge-over-the-great-divide/)
-___
-
-### Prototyping
-- [Generating code from low fidelity wireframes – Airbnb Design](https://airbnb.design/sketching-interfaces/)
-- static data
-- static data through state management (ngrx)
-- wiring up back-end data
-- container and component pattern
-- data exclusively through services, not in components
-- reactive data flows (rxjs)
-- content projection
-- collapsibles / expandables
-- [scalable user interfaces with angular 2 by gion kunz](https://www.youtube.com/watch?v=A4-bxyjXc40)
-- user interviews
-___
-
-## Thoughts on Design & Development
-
-There's a concept that the work of design and development are clearly divided in the sense that a designer does designer and a developer does development.
-
-This is about breaking that divide.  
-
-"Web Design is designing in the language of the web."
-"Web Design is design in the web."
-
-"Developers are included in Design"
-"design is a team sport"
-
-### The Way Forward
-- The way forward is to get developers interacting with design tokens that live in the browser
-- The way forward is to get designers working with components, css, and browser tools like chrome devtools
-
-- There are a lot of tools that are considered designer-y and tools that are considered developer-y
-	-  On the web the tools are the same, both dev and designer use the same things in this concept.
-
-### Benefit
-- Benefit: Dev bootcamp grads can do either design or dev, technically
-- Benefit: Lower friction between design and development of end-product
-
-#### Titles
-- Design Technologist
-- UX Engineer
-- Design Engineer
-- Dev-signer
-- Front-end Designer
+- [8pt Grid Baseline – Material Design](https://material.io/design/layout/spacing-methods.html#baseline)
+- [Line Height Tips – Refactoring UI](https://twitter.com/steveschoger/status/968519052800024577/photo/1)
 
 
-- [styleti.les](http://styletil.es/) to describe the high-fidelity
+### Typography
+
+- [Type Scale: Carbon Design System – IBM](https://www.carbondesignsystem.com/guidelines/typography/overview#scale) A type scale built on a single equation. The formula assumes that y₀=12 px. Formula for the scale was created to provide hierarchy for all types of experiences. 
+- [Type SCSS Functions: Carbon Design System – IBM](https://github.com/carbon-design-system/carbon/blob/master/packages/type/scss/_scale.scss) Github source for SCSS Functions and Mixins for creating a rational typography scale.
+- [Typography in Design Systems – Dan Mall, Superfriendly](https://superfriendlydesign.systems/articles/typography-in-design-systems/#type-in-code)\
+A typographic system that optimizes for guessability.
+- [Ether Typography System – We Are The Scenery](https://ether.thescenery.co/typography/) An alternative approach to creating typography scale in SCSS. Clever use of the `ex` unit in CSS.
+
+### Chrome Plugins
+
+- [Baseliner](https://chrome.google.com/webstore/detail/baseliner/agoopbiflnjadjfbhimhlmcbgmdgldld?hl=en-GB)\
+A great plugin for visualizing vertical rhythm in the browser
+- [Font Swap for Google Fonts](https://chrome.google.com/webstore/detail/font-swap-for-google-font/onhgmcpflfncjkdbclmhnfondmindgbg)\
+A tool that allows near-instant swapping of Google Fonts on any screen
+
+
+## Angular Project Specifics
+_This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0._
+
+### Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+### Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+### Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+
+
+_A demonstration project for AngularNYC October Meetup as part of the *Web Design is design in the Web* talk._
