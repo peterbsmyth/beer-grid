@@ -33,10 +33,15 @@ $card-image-height-desktop:         26rem;
 $card-image-shadow:                 initial;
 
 // Typography Mixins
-@mixin title {
+@mixin large-title {
   font-size: type-scale(8);
   line-height: baseline-scale(8);
   font-weight: $weight-light;
+}
+
+@mixin title {
+  font-size: type-scale(6);
+  line-height: baseline-scale(8);
 }
 
 @mixin headline {

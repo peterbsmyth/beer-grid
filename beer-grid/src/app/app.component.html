@@ -11,6 +11,7 @@
 
 <main>
   <section class="beers">
+    <pre>{{ beers | json }}</pre>
     <app-beer-card
       *ngFor="let beer of beers"
       [beer]="beer">
